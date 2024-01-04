@@ -3,17 +3,16 @@
 void tri_insertion(int tab[], int n) {
     int i, j, key;
     for (i = 1; i < n; i++) {
-        key = tab[i];   // Prend l'élément non trié
+        key = tab[i];  
         j = i - 1;
         
-        // Déplace les éléments du tableau qui sont plus grands que la clé
-        // vers une position en avant de leur position actuelle
+
         while (j >= 0 && tab[j] > key) {
             tab[j + 1] = tab[j];
             j = j - 1;
         }
         
-        tab[j + 1] = key;  // Place la clé à la bonne position dans le tableau trié
+        tab[j + 1] = key; 
     }
 }
 
